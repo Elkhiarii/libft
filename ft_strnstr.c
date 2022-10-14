@@ -18,47 +18,20 @@ char *ft_strnstr(const char *s1, const char *s2, size_t len)
     size_t i;
     i = 0;
 
-    while(i <= len)
+    while(i != len)
     {
-        printf("|i : %zu ft_camp : %d|",i,(ft_strncmp(&s1[i],s2,ft_strlen(s2))));
-        // if()
-        //     return (char *)&s1[i];
+        if((ft_strncmp((char *)&s1[i],s2,ft_strlen(s2)) == 0))
+            return (char *)&s1[i];
         i++;
     }
-    return "it's NOT OK" ;
+    return "0" ;
 }
 
+// int main(){
+//     const char *largestring = "Foo Bar Baz";
+//     const char *smallstring = "Bar";
+//     char *ptr;
 
-
-
-
-
-
-
-
-
-int main(){
-    const char *largestring = "Foo Bar Baz";
-    const char *smallstring = "Bar";
-    char *ptr;
-
-    ptr = ft_strnstr(largestring, smallstring,5);
-    puts(ptr);
-}
-// char *ft_strnstr(const char *s1, const char *s2, size_t len)
-// {
-//     size_t i;
-
-//     i = 0;
-//     char nb;
-
-//     while (i < len)
-//     {
-//         nb = ft_strncmp((char *)&s1[i],s2,ft_strlen(s2));
-//         printf("%zu | ", i);
-//         if(nb == '0')
-//             return (char *)&s1[i];
-//         i++;
-//     }
-//     return NULL;
+//     ptr = ft_strnstr(largestring, smallstring,5);
+//     puts(ptr); => Bar Baz
 // }
