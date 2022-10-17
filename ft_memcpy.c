@@ -1,44 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oelkhiar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/14 12:02:03 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/14 12:02:07 by oelkhiar         ###   ########.fr       */
+/*   Created: 2022/10/17 09:50:02 by oelkhiar          #+#    #+#             */
+/*   Updated: 2022/10/17 09:50:04 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+void *ft_memcpy(void *dst, const void *src, size_t n)
 {
-    unsigned char *st;
-    unsigned char *sy;
     size_t i;
 
-    st = (unsigned char *)s1;
-    sy = (unsigned char *)s2;
     i = 0;
-
-    while(i < n)
+    if(!dst && !src)
+        return 0;
+    while (i < n)
     {
-        if (*(st + i) != *(sy + i))
-            return (*(st + i) - *(sy + i));
+        ((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
         i++;
     }
-    return 0;
+    return (dst);
 }
-
 // int main()
 // {
-//     const void *s1;
-//     const void *s2;
+//     const char src[50] = "www.elkhiari.ga";
+//     char dst[50];
+//     strcpy(dst,"hello!");
+//     ft_memcpy(dst , src,3);
+//     printf("|%s|",dst); => |wwwlo!|
 
-//     s1 = "Othmane";
-//     s2 = "OthmaNe";
-
-//     int x;
-//     x = ft_memcmp(s1,s2,7);
-//     printf("%d",x);
 // }

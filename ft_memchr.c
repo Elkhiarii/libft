@@ -1,44 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oelkhiar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/14 12:02:03 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/14 12:02:07 by oelkhiar         ###   ########.fr       */
+/*   Created: 2022/10/17 10:13:49 by oelkhiar          #+#    #+#             */
+/*   Updated: 2022/10/17 10:13:50 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+
+void *memchr(const void *s, int c, size_t n)
 {
-    unsigned char *st;
-    unsigned char *sy;
-    size_t i;
-
-    st = (unsigned char *)s1;
-    sy = (unsigned char *)s2;
+    unsigned char *str;
+    str = (unsigned char *)s;
+    unsigned char ft_c;
+    ft_c = c;
+    int i ;
     i = 0;
-
     while(i < n)
     {
-        if (*(st + i) != *(sy + i))
-            return (*(st + i) - *(sy + i));
-        i++;
+        if(*(str + i) == ft_c)
+            return ((unsigned char *)&str[i]);
     }
     return 0;
 }
-
-// int main()
-// {
-//     const void *s1;
-//     const void *s2;
-
-//     s1 = "Othmane";
-//     s2 = "OthmaNe";
-
-//     int x;
-//     x = ft_memcmp(s1,s2,7);
-//     printf("%d",x);
-// }
