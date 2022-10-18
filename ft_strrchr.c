@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:30:31 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:33:57 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:25:08 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	ft_c;
+	char			ft_c;
 	unsigned int	len;
 
 	ft_c = (const char)c;
@@ -26,10 +26,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*int main(){
-	char *str;
-	str = "hello";
-	char f ;
-	f = 'e';
-	printf("%s",ft_strrchr(str , f)); => ello
-}*/

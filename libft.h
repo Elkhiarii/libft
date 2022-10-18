@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/18 18:32:56 by oelkhiar          #+#    #+#             */
+/*   Updated: 2022/10/18 21:38:06 by oelkhiar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
@@ -79,7 +91,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
-int		ft_isascii(char c);
+int		ft_isascii(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 

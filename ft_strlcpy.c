@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 10:06:04 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:26:05 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:24:55 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (srcsize);
 }
-/*
-int main()
-{
-	char *src ;
-	char dst[15];
-	src = "Hello world";
-	printf("%zu" ,ft_strlcpy(dst,src,3));
-}
-*/

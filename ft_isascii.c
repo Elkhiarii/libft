@@ -6,13 +6,11 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:20:04 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:09:53 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:34:00 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

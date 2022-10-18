@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcut.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 11:28:43 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:27:23 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:17:13 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 	size_t	i;
 	size_t	size;
 	char	*s;
-
+	
 	dstlen = ft_strlen(dst);
-	dstlen = ft_strlen(src);
+	srclen = ft_strlen(src);
 	i = 0;
 	s = (char *)src;
 	if (n > dstlen)

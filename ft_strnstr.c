@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 19:03:46 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:32:56 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:25:04 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,4 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	}
 	return (0);
 }
-// int main(){
-//     const char *largestring = "Foo Bar Baz";
-//     const char *smallstring = "Bar";
-//     char *ptr;
-//     ptr = ft_strnstr(largestring, smallstring,5);
-//     puts(ptr); => Bar Baz
-// }
+

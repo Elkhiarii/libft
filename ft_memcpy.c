@@ -6,11 +6,12 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 09:50:02 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:17:45 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:24:35 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
@@ -25,11 +26,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-// int main()
-// {
-//     const char src[50] = "www.elkhiari.ga";
-//     char dst[50];
-//     strcpy(dst,"hello!");
-//     ft_memcpy(dst , src,3);
-//     printf("|%s|",dst); => |wwwlo!|
-// }

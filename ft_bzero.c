@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:29:40 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 17:04:50 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 21:23:45 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-// int main()
-// {
-//     char s[] = "";
-//     ft_bzero(s+3,9);
-//     printf("%s",s);
-// }
