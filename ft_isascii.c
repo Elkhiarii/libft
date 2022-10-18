@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oelkhiar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:20:04 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/09 18:21:23 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 17:09:53 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(char c)
+int	ft_isascii(char c)
 {
 	if (c >= 0 && c <= 127)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }

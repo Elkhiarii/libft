@@ -3,23 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oelkhiar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:29:40 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/17 14:29:42 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/18 17:04:50 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-void ft_bzero(void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s,0,n);
+	ft_memset(s, 0, n);
 }
 // int main()
 // {
 //     char s[] = "";
 //     ft_bzero(s+3,9);
 //     printf("%s",s);
-
 // }
