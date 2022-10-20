@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 10:06:04 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/19 12:26:12 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/20 13:31:25 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 
 	srcsize = ft_strlen(src);
 	i = 0;
-	if(!dst || !dstsize)
+	if (!dst || !dstsize)
 		return (srcsize);
 	while (src[i] && i < dstsize - 1)
 	{

@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:30:31 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/19 11:39:46 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/20 13:32:25 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strrchr(const char *s, int c)
 
 	ft_c = (const char)c;
 	len = ft_strlen(s);
-	if(ft_c == 0)
-		return (char *)(s + len);
+	if (ft_c == 0)
+		return ((char *)(s + len));
 	while (len-- != 0)
 	{
 		if (s[len] == ft_c)
