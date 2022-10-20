@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 19:03:46 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 21:25:04 by oelkhiar         ###   ########.fr       */
+/*   Created: 2022/10/14 10:06:04 by oelkhiar          #+#    #+#             */
+/*   Updated: 2022/10/19 12:26:12 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t len)
+size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 {
+	size_t	srcsize;
 	size_t	i;
 
+	srcsize = ft_strlen(src);
 	i = 0;
-	while (i != len)
+	if(!dst || !dstsize)
+		return (srcsize);
+	while (src[i] && i < dstsize - 1)
 	{
-		if ((ft_strncmp((char *)&s1[i], s2, ft_strlen(s2)) == 0))
-			return ((char *)&s1[i]);
+		dst[i] = src[i];
 		i++;
 	}
-	return (0);
+	dst[i] = '\0';
+	return (srcsize);
 }
-

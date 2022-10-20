@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:32:56 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 21:38:06 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/19 12:43:54 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t nb);
 size_t	ft_strlcat(char *dest, const char *src, size_t nb);
+size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 int		*ft_range(int min, int max);
 char *ft_strdup(const char *s1);
 int		ft_ultimate_range(int **range, int min, int max);
@@ -94,6 +95,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 int		ft_isascii(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+void	*ft_calloc(size_t count, size_t size);
 
 //PART2
 void	*ft_memalloc(size_t size);

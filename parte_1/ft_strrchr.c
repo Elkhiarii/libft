@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/18 16:31:34 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 21:23:50 by oelkhiar         ###   ########.fr       */
+/*   Created: 2022/10/10 12:30:31 by oelkhiar          #+#    #+#             */
+/*   Updated: 2022/10/19 11:39:46 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_strrchr(const char *s, int c)
 {
-	void	*i;
+	char			ft_c;
+	unsigned int	len;
 
-	i = malloc(count * size);
-	ft_bzero(i, count * size);
-	return (i);
+	ft_c = (const char)c;
+	len = ft_strlen(s);
+	if(ft_c == 0)
+		return (char *)(s + len);
+	while (len-- != 0)
+	{
+		if (s[len] == ft_c)
+			return ((char *)&s[len]);
+	}
+	return (0);
 }
