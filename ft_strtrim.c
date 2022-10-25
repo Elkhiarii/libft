@@ -6,13 +6,13 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:48:21 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/24 19:02:42 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/25 09:57:07 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	serchw(const char *set, char c)
+static int	serchw(const char *set, char c)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ static int	beginw(const char *s1, const char *set)
 	return (-1);
 }
 
-int	endw(char const *s1, char const *set)
+static int	endw(char const *s1, char const *set)
 {
 	int	len;
 

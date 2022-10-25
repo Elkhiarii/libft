@@ -6,11 +6,11 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 13:58:08 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/24 14:18:59 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/25 12:11:39 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 
 static char	**free_split(char **split)
 {
@@ -23,7 +23,7 @@ static char	**free_split(char **split)
 	return (0);
 }
 
-static size_t	ft_len(char *s, char c)
+static size_t	ft_len(const char *s, const char c)
 {
 	int	len;
 	int	i;
@@ -48,6 +48,8 @@ char	**ft_split(char const *s, char c)
 	size_t	fw;
 	char	**split;
 
+	i = 0;
+	j = 0;
 	if (!s || !c)
 		return (0);
 	split = malloc(sizeof(char *) * (ft_len(s, c) + 1));
@@ -60,7 +62,7 @@ char	**ft_split(char const *s, char c)
 		fw = j;
 		while (s[j] != c && s[j])
 			j++;
-		split[i] = ft_substr(&s[j], 0, j - fw);
+		split[i] = ft_substr(s + j, 0, j - fw);
 		if (split[i++] == 0)
 			return (free_split(split));
 	}
