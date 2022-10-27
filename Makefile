@@ -11,6 +11,9 @@ all: $(NAME)
 $(NAME) : $(OBJ)
 			ar -rcs $(NAME) $(OBJ)
 
+$(NAME) : $(OBJ)
+			ar -rcs $(NAME) $(OBJ)
+
 clean:
 			rm -f *.o
 

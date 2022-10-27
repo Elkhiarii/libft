@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 13:21:27 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/27 10:32:50 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/27 11:57:53 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	t_list	*last;
 
 	if (!lst || !new)
-		return (0);
+		return ;
 	last = *lst;
 	while (last)
 		last = last->next;
