@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:32:56 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/26 13:49:01 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/27 10:26:13 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ t_list *ft_lstlast(t_list *lst);
 void ft_lstadd_back(t_list **lst, t_list *new);
 void ft_lstdelone(t_list *lst, void (*del)(void*));
 void ft_lstiter(t_list *lst, void (*f)(void *));
+void ft_lstclear(t_list **lst, void (*del)(void*));
 
 #endif
