@@ -1,6 +1,7 @@
 
 NAME	:= libft.a
 CC		:= cc
+HDR = libft.h
 CFLAGS	:= -Wall -Wextra -Werror
 FILES	:= $(shell find . -type f -name "ft_*.c")
 OBJ		:= $(FILES:%.c=%.o)
@@ -8,14 +9,17 @@ OBJ		:= $(FILES:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME) : $(OBJ)
-			ar -rcs $(NAME) $(OBJ)
+%.o : %.c $(HDR)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME) : $(OBJ)
-			ar -rcs $(NAME) $(OBJ)
+			ar -rc $(NAME) $(OBJ)
+
+# $(NAME) : $(OBJ)
+# 			ar -rcs $(NAME) $(OBJ)
 
 clean:
-			rm -f *.o
+			rm -f $(OBJ)
 
 fclean: clean
 			rm -f $(NAME)

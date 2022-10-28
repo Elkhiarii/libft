@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:02:03 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/20 13:29:10 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/28 14:24:51 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (*(st + i) != *(sy + i))
-			return (*(st + i) - *(sy + i));
+			return ((*(st + i) - *(sy + i)));
 		i++;
 	}
 	return (0);

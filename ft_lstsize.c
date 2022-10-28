@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 13:14:49 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/27 10:34:48 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:35:52 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_lstsize(t_list *lst)
 	if (!lst)
 		return (0);
 	len = 0;
-	while (lst->next)
+	while (lst)
 	{
 		len++;
 		lst = lst->next;

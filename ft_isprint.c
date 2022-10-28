@@ -6,11 +6,11 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:33:13 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/18 21:39:33 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/28 14:16:03 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }

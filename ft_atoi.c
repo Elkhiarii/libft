@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:52:08 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/19 13:40:42 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/28 16:09:53 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,6 @@ int	ft_atoi(const char *str)
 	}
 	return (num * cp);
 }
+
+
+

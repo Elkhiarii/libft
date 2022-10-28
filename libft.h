@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 18:32:56 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/27 10:26:13 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/28 16:09:27 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ struct s_list	*next;
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
-int		ft_isalnum(char c);
-int		ft_isalpha(char c);
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
 int		ft_isascii(int c);
-int		ft_isdigit(char c);
-int		ft_isprint(char c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
 char	*ft_itoa(int n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -47,7 +47,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int		ft_strncmp(char *s1, const char *s2, size_t n);
+int     ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
@@ -62,6 +62,8 @@ t_list *ft_lstlast(t_list *lst);
 void ft_lstadd_back(t_list **lst, t_list *new);
 void ft_lstdelone(t_list *lst, void (*del)(void*));
 void ft_lstiter(t_list *lst, void (*f)(void *));
-void ft_lstclear(t_list **lst, void (*del)(void*));
+void ft_lstclear(t_list **lst, void (*del)(void*));    
 
+
+ 
 #endif
