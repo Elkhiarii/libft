@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:35:30 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/27 11:21:47 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/31 13:52:08 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	j;
 	char	*p;
-	
+
 	if (!s)
 		return (0);
 	if (len <= ft_strlen(s + start))
