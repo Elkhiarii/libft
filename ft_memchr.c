@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:13:49 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/31 12:52:03 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/10/31 18:15:25 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == ft_c)
-			return ((unsigned char *)&str[i]);
+			return ((void *)&str[i]);
 		i++;
 	}
 	return (0);
