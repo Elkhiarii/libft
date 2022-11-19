@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:19:20 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/10/31 14:01:48 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/11/19 12:46:50 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*str;
 
+	if (!s1)
+		return ((char *)s2);
 	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	i = 0;
 	j = 0;

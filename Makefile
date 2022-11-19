@@ -6,7 +6,7 @@
 #    By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/08 13:00:08 by oelkhiar          #+#    #+#              #
-#    Updated: 2022/11/15 15:19:42 by oelkhiar         ###   ########.fr        #
+#    Updated: 2022/11/19 12:37:40 by oelkhiar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,19 +51,7 @@ FILES	:=    ft_strlen.c		\
 		  ft_putnbr_fd.c	\
 		  ft_striteri.c
 
-SRCS_BN := ft_lstnew.c		\
-		  ft_lstsize.c		\
-		  ft_lstadd_front.c	\
-		  ft_lstadd_back.c	\
-		  ft_lstclear.c		\
-		  ft_lstlast.c		\
-		  ft_lstiter.c		\
-		  ft_lstdelone.c	
-
-
 OBJ		:= $(FILES:%.c=%.o)
-
-OBJS_BONUS = $(SRCS_BN:.c=.o)
 
 all: $(NAME)
 
@@ -73,11 +61,8 @@ all: $(NAME)
 $(NAME) : $(OBJ)
 			ar -rc $(NAME) $(OBJ)
 
-bonus : $(OBJS_BONUS)
-	ar -rc $(NAME) $(OBJS_BONUS)
-
 clean:
-			rm -f $(OBJ) $(OBJS_BONUS)
+			rm -f $(OBJ)
 
 fclean: clean
 			rm -f $(NAME)
