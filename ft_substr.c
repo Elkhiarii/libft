@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:35:30 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/11/08 11:59:59 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/11/20 13:29:06 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,27 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	j;
-	char	*p;
+	char	*str;
+	size_t	i;
+	size_t	len_s;
 
-	if (!s)
-		return (0);
-	if (len <= ft_strlen(s + start))
-		p = (char *)(malloc(len + 1));
+	i = 0;
+	if (s == NULL)
+		return (NULL);
+	len_s = ft_strlen(s);
+	if (start >= len_s)
+		return (ft_strdup(""));
+	if (ft_strlen(s + start) < len)
+		str = malloc(ft_strlen(s + start) * sizeof(char) + 1);
 	else
-		p = (char *)(malloc(ft_strlen(s + start) + 1));
-	j = 0;
-	if (!p)
-		return (0);
-	while (s[start] && j < len && start < ft_strlen(s))
+		str = malloc(len * sizeof(char) + 1);
+	if (str == NULL )
+		return (NULL);
+	while (i < len && s[start + i])
 	{
-		p[j] = s[start];
-		j++;
-		start++;
+		str[i] = s[start + i];
+		i++;
 	}
-	p[j] = '\0';
-	return (p);
+	str[i] = '\0';
+	return (str);
 }
