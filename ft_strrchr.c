@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:30:31 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/11/14 12:11:46 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/11/20 12:51:58 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	while (i--)
 	{
-		if (s[i] == (unsigned char)c)
+		if (s[i] == (char)c)
 			return ((char *)s + i);
 	}
 	return (NULL);

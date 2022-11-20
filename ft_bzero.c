@@ -6,7 +6,7 @@
 /*   By: oelkhiar <oelkhiar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:29:40 by oelkhiar          #+#    #+#             */
-/*   Updated: 2022/11/14 15:02:46 by oelkhiar         ###   ########.fr       */
+/*   Updated: 2022/11/20 13:11:16 by oelkhiar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '\0', n);
+	unsigned char	*s1;
+	size_t			i;
+
+	s1 = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		s1[i] = '\0';
+		i++;
+	}
 }
